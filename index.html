@@ -1,458 +1,682 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="Cg6N8RQj2cHFQvROAj5ZFbsChoLHEoc43q74QE6dbCk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="Cg6N8RQj2cHFQvROAj5ZFbsChoLHEoc43q74QE6dbCk" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Youssef Zaza</title>
+    <title>Youssef Zaza | Portfolio</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
 
+    <!-- Ambient Glow Backgrounds (Magic UI Style) -->
+    <div class="glow-bg-1"></div>
+    <div class="glow-bg-2"></div>
+
+    <!-- 1. Floating Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Youssef Zaza</div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://wa.me" target="_blank" class="btn-primary">Direct WhatsApp</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Dynamic Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Professional Web Developer</span>
+            <h1 class="hero-title">Hi, I am <span class="text-gradient">Youssef Zaza</span></h1>
+            <p class="hero-desc">I transform complex ideas into high-performance, visually stunning, and interactive web interfaces using modern animation practices and clean code architectures.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-solid">View My Work</a>
+                <a href="#contact" class="btn-outline">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Projects Section (Bento Grid Style with Images) -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>Latest Projects & Builds</h2>
+            <p>A curated selection of web applications and platforms engineered with absolute precision.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="card-glow-line"></div>
+                <div class="project-image-container">
+                    <img src="image1.jpg" alt="E-Commerce Ecosystem" class="project-img">
+                    <div class="image-fallback-glow"></div>
+                </div>
+                <div class="project-card-info">
+                    <h3 class="project-title">E-Commerce Ecosystem</h3>
+                    <p class="project-desc">A blazing fast modern web store integrated with a dynamic dashboard and instant push notifications.</p>
+                    <div class="tech-tags">
+                        <span>Next.js</span>
+                        <span>Tailwind</span>
+                        <span>Prisma</span>
+                    </div>
+                    <a href="#" class="project-link">Live Preview <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="card-glow-line"></div>
+                <div class="project-image-container">
+                    <img src="image2.jpg" alt="Cloud CRM Platform" class="project-img">
+                    <div class="image-fallback-glow"></div>
+                </div>
+                <div class="project-card-info">
+                    <h3 class="project-title">Cloud CRM Platform</h3>
+                    <p class="project-desc">A customized corporate dashboard system built for real-time sales management and detailed client tracking.</p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="#" class="project-link">Live Preview <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="card-glow-line"></div>
+                <div class="project-image-container">
+                    <img src="image3.jpg" alt="Smart Booking Solution" class="project-img">
+                    <div class="image-fallback-glow"></div>
+                </div>
+                <div class="project-card-info">
+                    <h3 class="project-title">Smart Booking Solution</h3>
+                    <p class="project-desc">An interactive interface designed for secure online scheduling, flexible calendars, and seamless automated payments.</p>
+                    <div class="tech-tags">
+                        <span>TypeScript</span>
+                        <span>Express</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <a href="#" class="project-link">Live Preview <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Ready to Start a Project?</h2>
+            <p>Get in touch directly through your preferred platform. Instant responses guaranteed.</p>
+            
+            <div class="contact-grid">
+                <a href="https://wa.me" target="_blank" class="contact-box whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <span>WhatsApp</span>
+                        <strong>01006589035</strong>
+                    </div>
+                </a>
+                <a href="https://t.me" target="_blank" class="contact-box telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                    <div>
+                        <span>Telegram</span>
+                        <strong>@zaza_pasha</strong>
+                    </div>
+                </a>
+                <a href="mailto:zaza.pasha44@gmail.com" class="contact-box email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <span>Email</span>
+                        <strong>zaza.pasha44@gmail.com</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+  /* Color Palette Variables (Midnight Tech) */
+:root {
+    --bg-dark: #030303;        /* Midnight Dark Black */
+    --card-bg: #121214;        /* Muted Space Gray */
+    --neon-blue: #00F0FF;      /* Electric Neon Blue */
+    --magic-purple: #A855F7;   /* Vibrant Magic Purple */
+    --text-white: #ffffff;
+    --text-gray: #a1a1aa;
 }
 
-body{
-    background:#080808;
-    color:#fff;
-    overflow-x:hidden;
-}
-
-/* Loader */
-#loader{
-    position:fixed;
-    width:100%;
-    height:100vh;
-    background:#080808;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
-
-.loader-circle{
-    width:50px;
-    height:50px;
-    border:4px solid #111;
-    border-top:4px solid #b6ff00;
-    border-radius:50%;
-    animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-    100%{transform:rotate(360deg);}
-}
-
-/* Navbar */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    padding:25px 5%;
-    position:fixed;
-    width:100%;
-    background:rgba(8, 8, 8, 0.8);
-    backdrop-filter: blur(10px);
-    z-index:1000;
-}
-
-.logo{
-    color:#b6ff00;
-    font-size:24px;
-    font-weight:900;
-    letter-spacing: 1px;
-}
-
-nav a{
-    margin:0 15px;
-    color:#aaa;
-    text-decoration:none;
-    font-weight: 500;
-    transition: .3s;
-}
-
-nav a:hover{
-    color:#b6ff00;
-}
-
-/* Hero Section */
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:150px 5% 80px;
-    position:relative;
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-/* Text Box */
-.hero-text{
-    position: relative;
-    z-index: 10;
-    max-width: 600px;
-}
-
-.hero-text h4{
-    font-size: 20px;
-    color: #b6ff00;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.hero-text h1{
-    font-size:65px;
-    color:#fff;
-    line-height: 1.1;
-    font-weight: 800;
-}
-
-.hero-text h2{
-    font-size:38px;
-    color: #888;
-    margin-top: 10px;
-    font-weight: 600;
-}
-
-.hero-text p{
-    color:#aaa;
-    margin:25px 0 40px;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.btn{
-    display: inline-block;
-    background:#b6ff00;
-    color:#000;
-    padding:14px 35px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight: 700;
-    box-shadow: 0 5px 15px rgba(182,255,0,0.3);
-    transition: .3s;
-}
-
-.btn:hover{
-    background:#fff;
-    box-shadow: 0 5px 25px rgba(255,255,255,0.3);
-    transform: translateY(-3px);
-}
-
-/* 🌀 الشكل الجديد والأسطوري المبتكر (YZ Cyber-Badge) */
-.hero-design {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-}
-
-/* الشكل الهندسي المضيء الدوار */
-.tech-box {
-    position: absolute;
-    width: 380px;
-    height: 380px;
-    border: 2px dashed rgba(182, 255, 0, 0.4);
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    animation: morphing 10s infinite linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tech-box::before {
-    content: '';
-    position: absolute;
+/* Base Configuration - Fixed Horizontal Scroll */
+html, body {
     width: 100%;
-    height: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    animation: spin 15s infinite linear reverse;
+    max-width: 100%;
+    overflow-x: hidden; /* This completely destroys the horizontal bounce/scroll bug */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
 }
 
-/* الشعار النصي العملاق ثلاثي الأبعاد الخلفي */
-.giant-letters {
-    font-size: 180px;
-    font-weight: 900;
-    color: transparent;
-    background: linear-gradient(45deg, #b6ff00, #222);
-    -webkit-background-clip: text;
-    background-clip: text;
-    opacity: 0.8;
-    letter-spacing: -10px;
-    position: relative;
-    animation: float 4s ease-in-out infinite;
-    filter: drop-shadow(0 0 30px rgba(182,255,0,0.2));
+* {
+    box-sizing: inherit;
 }
 
-/* تأثيرات الأنيميشن التفاعلية */
-@keyframes morphing {
-    0% { border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%; transform: rotate(0deg); }
-    50% { border-radius: 50% 50% 30% 70% / 50% 60% 40% 50%; }
-    100% { border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%; transform: rotate(360deg); }
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-15px) scale(1.03); }
-}
-
-/* Background Glow */
-.hero::after {
-    content: "";
+/* Ambient Glow Effects (Magic UI) - Kept safely contained inside the canvas */
+.glow-bg-1 {
     position: absolute;
-    right: -10%;
-    top: 10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(182,255,0,0.1) 0%, transparent 70%);
-    z-index: 1;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    background: rgba(168, 85, 247, 0.08);
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
     pointer-events: none;
 }
 
-/* Sections */
-section{
-    padding:100px 5%;
-}
-
-/* Services */
-.services{
-    text-align:center;
-}
-
-.services h2, .projects h2, .contact h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.services h2::after, .projects h2::after, .contact h2::after {
-    content: '';
+.glow-bg-2 {
     position: absolute;
-    bottom: -10px;
+    top: 30%;
+    left: 15%;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 240, 255, 0.06);
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* 1. Floating Glassmorphism Navbar */
+.navbar {
+    position: fixed;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: #b6ff00;
+    width: 90%;
+    max-width: 1100px;
+    background: rgba(18, 18, 20, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    padding: 12px 24px;
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card{
-    background:#121212;
-    padding:35px 25px;
-    border-radius:16px;
-    width:300px;
-    border: 1px solid #1a1a1a;
-    transition:.4s ease;
+.logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, var(--neon-blue), var(--magic-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.card:hover{
-    transform:translateY(-12px);
-    border-color: #b6ff00;
-    box-shadow: 0 10px 30px rgba(182,255,0,0.1);
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-/* Projects */
-.projects{
-    text-align:center;
-}
-
-.project-box{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-}
-
-.project{
-    background:#121212;
-    padding:35px 25px;
-    width:300px;
-    border-radius:16px;
-    border: 1px solid #1a1a1a;
-    transition: .4s;
-}
-
-.project:hover {
-    transform: translateY(-12px);
-    border-color: #b6ff00;
-}
-
-.project a{
-    display: inline-block;
-    margin-top: 15px;
-    color:#b6ff00;
+.nav-links a {
+    color: var(--text-gray);
     text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--neon-blue);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, var(--neon-blue), var(--magic-purple));
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
     font-weight: 600;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+    transition: transform 0.3s ease;
 }
 
-/* Contact */
-.contact{
-    text-align:center;
-}
-
-.whatsapp{
-    display: inline-block;
-    background:#25D366;
-    padding:16px 35px;
-    border-radius:8px;
-    color:#fff;
-    text-decoration:none;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(37,211,102,0.3);
-    transition: .3s;
-}
-
-.whatsapp:hover {
+.btn-primary:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 25px rgba(37,211,102,0.5);
 }
 
-/* Scroll Animations */
-.hidden{
-    opacity:0;
-    transform:translateY(50px);
-    transition:1s cubic-bezier(0.4, 0, 0.2, 1);
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.show{
-    opacity:1;
-    transform:translateY(0);
+.menu-toggle span {
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-white);
+    transition: 0.3s ease;
 }
 
-/* 📱 هندسة وتوافق الموبايل بالملي */
-@media screen and (max-width: 992px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding-top: 160px;
-    }
+/* 2. Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 60px 20px;
+}
 
-    .hero-text {
-        margin-bottom: 50px;
-    }
+.hero-content {
+    max-width: 800px;
+}
 
-    .hero-text h1 {
-        font-size: 45px;
-    }
+.badge {
+    display: inline-block;
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    color: var(--neon-blue);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
 
-    .hero-text h2 {
-        font-size: 28px;
-    }
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 850;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #ffffff, #a1a1aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    .hero-design {
+.text-gradient {
+    background: linear-gradient(to right, var(--neon-blue), var(--magic-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-solid {
+    background: var(--text-white);
+    color: var(--bg-dark);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-solid:hover {
+    background: #e4e4e7;
+}
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* 3. Bento Projects Section with Premium Images Layout */
+.projects-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    position: relative;
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    overflow: hidden; /* Contain the image scaling animation safely */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    border-color: rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 35px rgba(0, 240, 255, 0.12);
+    transform: translateY(-5px);
+}
+
+.card-glow-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(to right, var(--neon-blue), var(--magic-purple));
+    transition: width 0.4s ease;
+    z-index: 5;
+}
+
+.project-card:hover .card-glow-line {
+    width: 100%;
+}
+
+/* Advanced Project Image Mask Wrapper */
+.project-image-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background-color: #1a1a1e;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.06); /* Premium Smooth Zoom Effect */
+}
+
+/* Fallback Cyber Gradient design in case images fail to load or are absent */
+.image-fallback-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #121214, #0f172a);
+    z-index: 1;
+}
+
+.project-card-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+    color: var(--neon-blue);
+}
+
+.project-desc {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.tech-tags span {
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #d4d4d8;
+    padding: 4px 12px;
+    border-radius: 15px;
+}
+
+.project-link {
+    color: var(--neon-blue);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: auto; /* Push link to the bottom layout line */
+}
+
+.project-link i {
+    font-size: 0.75rem;
+    margin-left: 4px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-link i {
+    transform: translateX(4px);
+}
+
+/* 4. Contact Section Configuration */
+.contact-section {
+    background: rgba(18, 18, 20, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    color: var(--text-gray);
+    margin-bottom: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--text-white);
+    transition: border-color 0.3s ease;
+}
+
+.contact-box i {
+    font-size: 1.8rem;
+}
+
+.contact-box div {
+    text-align: left;
+}
+
+.contact-box span {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-gray);
+}
+
+.contact-box strong {
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 2px;
+}
+
+.whatsapp:hover { border-color: #25D366; }
+.telegram:hover { border-color: #0088cc; }
+.email:hover { border-color: var(--magic-purple); }
+
+.whatsapp i { color: #25D366; }
+.telegram i { color: #0088cc; }
+.email i { color: var(--magic-purple); }
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: -100%;
         width: 100%;
-        height: 320px;
+        background: rgba(18, 18, 20, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    .tech-box {
-        width: 260px;
-        height: 260px;
+    .nav-links.active {
+        left: 0;
     }
 
-    .giant-letters {
-        font-size: 120px;
-        letter-spacing: -5px;
+    .menu-toggle {
+        display: flex;
     }
-}
+
+
 </style>
-</head>
-
-<body>
-
-<div id="loader">
-    <div class="loader-circle"></div>
-</div>
-
-<header>
-    <div class="logo">Zaza.</div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero hidden">
-
-    <div class="hero-text">
-        <h4>Hello, I'm</h4>
-        <h1>Youssef Zaza</h1>
-        <h2>Web Designer</h2>
-        <p>I create modern websites with high performance and advanced interactive experiences.</p>
-        <a href="https://wa.me/201006589032" class="btn">Hire Me</a>
-    </div>
-
-    <div class="hero-design">
-        <div class="tech-box">
-            <div class="giant-letters">YZ</div>
-        </div>
-    </div>
-
-</section>
-
-<section class="services hidden" id="services">
-    <h2>Services</h2>
-    <div class="cards">
-        <div class="card"><h3>Web Design</h3><p style="color:#666; margin-top:10px;">Creating beautiful and unique layouts.</p></div>
-        <div class="card"><h3>Fast Performance</h3><p style="color:#666; margin-top:10px;">Optimized code for blazing speed.</p></div>
-        <div class="card"><h3>Clean Code</h3><p style="color:#666; margin-top:10px;">Writen structure following best standards.</p></div>
-    </div>
-</section>
-
-<section class="projects hidden" id="projects">
-    <h2>Projects</h2>
-    <div class="project-box">
-        <div class="project"><h3>To Do List</h3> <a href="https://mohammedzareefm.github.io/To_do_list/">View Project</a></div>
-        <div class="project"><h3>Calculator</h3> <a href="https://mohammedzareefm.github.io/calculator-/">View Project</a></div>
-        <div class="project"><h3>Gallery</h3> <a href="https://mohammedzareefm.github.io/Image_gallery/">View Project</a></div>
-    </div>
-</section>
-
-<section class="contact hidden" id="contact">
-    <h2>Let's Work Together</h2>
-    <a href="https://wa.me/201006589032" class="whatsapp">Connect Via WhatsApp</a>
-</section>
-
 <script>
-/* Loader */
-window.onload = () => {
-    setTimeout(()=>{
-        document.getElementById("loader").style.display="none";
-    },800);
-};
+  // Responsive Mobile Navigation Menu Handler
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
 
-/* Scroll animation */
-const elements = document.querySelectorAll(".hidden");
-const checkScroll = () => {
-    elements.forEach(el=>{
-        if(el.getBoundingClientRect().top < window.innerHeight - 100){
-            el.classList.add("show");
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+});
+
+// Auto-close menu drawer when selecting any anchor inside the mobile overlay
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('open');
+    });
+});
+
+// Dynamic Active Link Tracker Triggered on User Scroll Event
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        // Check window position state relative to targeted content layouts
+        if (pageYOffset >= (sectionTop - 200)) {
+            current = section.getAttribute('id');
         }
     });
-};
 
-window.addEventListener("scroll", checkScroll);
-window.addEventListener("load", checkScroll);
-</script>
+    navItems.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href').includes(current)) {
+            a.classList.add('active');
+        }
+    });
+});
 
-</body>
-    </html>
+                </script>
     
